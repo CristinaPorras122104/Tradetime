@@ -1,0 +1,138 @@
+.msg-wrap { padding: 0 18px 18px; }
+
+.msg-title{
+  margin: 8px 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.msg-layout{
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* LEFT */
+.msg-list{
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 14px;
+  min-height: 620px;
+}
+
+.msg-user{
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.msg-user-active{ background: #e9e9e9; }
+
+.msg-avatar{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #bdbdbd;
+  flex: 0 0 auto;
+}
+
+.msg-lines{ flex: 1; padding-top: 6px; }
+.msg-line{
+  height: 10px;
+  background: #d6d6d6;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.msg-line.short{ width: 60%; }
+
+/* RIGHT */
+.msg-chat{
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-chat-top{
+  height: 64px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.msg-top-icons{ display: flex; gap: 10px; }
+.msg-top-dot{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #d6d6d6;
+}
+
+.msg-chat-body{
+  flex: 1;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.msg-bubble{
+  max-width: 520px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.msg-bubble.left{
+  align-self: flex-start;
+  background: #f3a9b2;
+}
+.msg-bubble.right{
+  align-self: flex-end;
+  background: #d6d6d6;
+}
+
+.msg-chat-input{
+  border-top: 1px solid #ddd;
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.msg-input{
+  flex: 1;
+  height: 40px;
+  border-radius: 22px;
+  border: 1px solid #aaa;
+  padding: 0 14px;
+  outline: none;
+}
+
+.msg-mic{
+  height: 40px;
+  width: 52px;
+  border-radius: 22px;
+  border: 1px solid #aaa;
+  background: #fff;
+  cursor: pointer;
+}
+
+.msg-send{
+  height: 40px;
+  width: 86px;
+  border-radius: 22px;
+  border: none;
+  background: #EF233C;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}

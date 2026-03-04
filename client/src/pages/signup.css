@@ -1,0 +1,134 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+.su-page { min-height: 100vh; }
+
+/* ================= MAIN CENTER ================= */
+.su-main{
+  min-height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+}
+
+/* CENTER IMAGE LOGO */
+.su-floating-logo{
+  width: 100px;      
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+/* ================= CARD ================= */
+.su-card{
+  width: 460px;                 
+  background: #fff;
+  border: 2px solid #EF233C;    
+  border-radius: 10px;
+  padding: 34px 56px 28px;
+}
+
+.su-title{
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #111;
+}
+
+.su-subtitle{
+  margin: 6px 0 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #222;
+}
+
+/* ================= FORM ================= */
+.su-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.su-label{
+  font-size: 12px;
+  color: #111;
+  margin: 10px 0 6px;
+}
+
+.su-input{
+  height: 30px;                
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 12px;
+  outline: none;
+  background: #fff;
+  color: #111;
+}
+
+.su-input::placeholder{
+  color: #b3b3b3;
+}
+
+.su-hint{
+  font-size: 10px;
+  margin-top: 6px;
+  color: #222;
+}
+
+/* FIRST + LAST NAME ROW */
+.su-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.su-col{
+  display:flex;
+  flex-direction:column;
+}
+
+/* ================= BUTTON ================= */
+.su-btn{
+  margin-top: 16px;
+  height: 34px;
+  width: 100%;
+  background: #EF233C;         
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: none;             
+}
+
+.su-btn:hover{
+  filter: brightness(0.95);
+}
+
+/* ================= FOOTER ================= */
+.su-footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: #222;
+}
+
+.su-link{
+  color: #EF233C;                /* FIGMA RED */
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.su-link:hover{
+  text-decoration: underline;
+}

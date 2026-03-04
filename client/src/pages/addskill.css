@@ -1,0 +1,125 @@
+/* src/pages/addskill.css */
+* { box-sizing: border-box; }
+
+.as-page{
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.as-title{
+  text-align: center;
+  margin: 22px 0 18px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #111;
+}
+
+.as-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.as-card{
+  width: 540px;
+  background: #fff;
+  border: 1.5px solid #EF233C;
+  border-radius: 6px;
+  padding: 26px 28px 30px;
+}
+
+.as-label{
+  display: block;
+  margin: 16px 0 8px;
+  font-size: 18px;
+  color: #111;
+}
+
+.as-input,
+.as-textarea,
+.as-select{
+  width: 100%;
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.as-input{ height: 34px; }
+
+.as-textarea{
+  height: 120px;
+  resize: none;
+}
+
+.as-select{
+  height: 36px;
+}
+
+.as-upload-row{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.as-upload-box{
+  width: 92px;
+  height: 92px;
+  border: 2px solid #EF233C;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.as-plus{
+  font-size: 56px;
+  line-height: 1;
+  color: #EF233C;
+  font-weight: 700;
+}
+
+.as-preview{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.as-preview-chip{
+  max-width: 260px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.as-btn{
+  margin-top: 18px;
+  width: 190px;
+  height: 44px;
+  background: #EF233C;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.as-btn:hover{
+  filter: brightness(0.95);
+}
+
+@media (max-width: 620px){
+  .as-card{ width: calc(100% - 36px); }
+}
