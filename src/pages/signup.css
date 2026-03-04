@@ -1,0 +1,147 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+.su-page { min-height: 100vh; }
+
+/* ================= TOP BAR ================= */
+.su-topbar{
+  height: 74px;
+  width: calc(100% - 36px);
+  margin: 18px;
+  border-radius: 12px;
+  background: #bdbdbd;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  gap: 12px;
+}
+
+.su-logo{
+  width: 90px;     
+  height: auto;     
+  object-fit: contain;
+}
+
+
+.su-brand{
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ================= MAIN CENTER ================= */
+.su-main{
+  min-height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+}
+
+/* CENTER IMAGE LOGO */
+.su-floating-logo{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+/* ================= CARD ================= */
+.su-card{
+  width: 520px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 46px 74px 42px;
+}
+
+.su-title{
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.su-subtitle{
+  margin: 4px 0 26px;
+  text-align: center;
+  font-size: 13px;
+  color: #222;
+}
+
+/* ================= FORM ================= */
+.su-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.su-label{
+  font-size: 13px;
+  color: #111;
+  margin: 12px 0 6px;
+}
+
+.su-input{
+  height: 34px;
+  border: 1px solid #9a9a9a;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 12px;
+  outline: none;
+  background: #fff;
+}
+
+.su-input::placeholder{
+  color: #b3b3b3;
+}
+
+.su-hint{
+  font-size: 11px;
+  margin-top: 6px;
+  color: #222;
+}
+
+/* FIRST + LAST NAME ROW */
+.su-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.su-col{
+  display:flex;
+  flex-direction:column;
+}
+
+/* ================= BUTTON ================= */
+.su-btn{
+  margin-top: 18px;
+  height: 36px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+/* ================= FOOTER ================= */
+.su-footer{
+  margin-top: 12px;
+  text-align: center;
+  font-size: 10px;
+  color: #222;
+}
+
+.su-link{
+  text-decoration: underline;
+  cursor: pointer;
+}
